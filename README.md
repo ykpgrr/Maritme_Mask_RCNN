@@ -32,8 +32,10 @@ The repository includes:
 
 * [showdata.py](mrcnn/showdata.py) to visualize the created instance masks. Usage:
    ```bash
-   python showdata.py N
-   ```, where N is the number of image in training folder (f.ex. 00025).
+   python showdata.py N (where N is the number of image in training folder (f.ex. 00025)).
+   ```
+
+*  Download pre-trained COCO weights (mask_rcnn_coco.h5) from the [releases page](https://github.com/matterport/Mask_RCNN/releases).
 
 * To start training the network please create your own config file or modify [maritime.py](mrcnn/maritime.py). Start training, using the pre-generated COCO weights as starting point, with:
  ```bash
