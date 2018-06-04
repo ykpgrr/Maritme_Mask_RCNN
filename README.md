@@ -1,6 +1,6 @@
 # Train your own dataset with Mask R-CNN (DTU Maritime Dataset example)
 
-This repository tries to simplify the process of creating a Dataset and training Mask R-CNN from scratch. Specifically, a maritime dataset of 176 images is created which include 5 classes: buoys, land, sea, sky and ships. Training this dataset on Mask R-CNN allows the semantic segmentation of live video coming from cameras on board an maritime vessel, enabling it, in the future, to recognize, understand and act upon its surroundings autonomously.
+This repository tries to simplify the process of creating a Dataset and training Mask R-CNN from scratch. Specifically, a maritime dataset of 176 images is created which include 5 classes: buoys (green), land (red), sea (dark blue), sky (turquoise) and ships (white). Training this dataset on Mask R-CNN allows the semantic segmentation of live video coming from cameras on board an maritime vessel, enabling it, in the future, to recognize, understand and act upon its surroundings autonomously.
 
 ![Mask-RCNN on the DTU Maritime Dataset](assets/maritime_intro.png)
 
@@ -46,7 +46,7 @@ The repository includes:
    ```
 The weights will be saved every epoch in the *logs* folder.
 
-* [maritime.ipynb](mrcnn/maritime.ipynb) to visualize the results through Jupyter Notebook
+* [maritime.ipynb](mrcnn/maritime.ipynb) to visualize the results through Jupyter Notebook. Some results are shown as follows:
 
 ![Jupyter Notebook results](assets/f_pass.png)
 
@@ -56,6 +56,6 @@ The weights will be saved every epoch in the *logs* folder.
 
 * [mask_rcnn_video.py](Train_own_dataset/running_codes/mask_rcnn_video.py) to run the trained network on a specific video and save the results as a video too.
 
-### [Video Demo](https://www.youtube.com/watch?v=_vmKbbW1FuM)
+### [Real-time Video Demo](https://www.youtube.com/watch?v=_vmKbbW1FuM)
 [![Mask RCNN on DTU Maritime Dataset](assets/maritime_video.gif)](https://www.youtube.com/watch?v=_vmKbbW1FuM)
 
