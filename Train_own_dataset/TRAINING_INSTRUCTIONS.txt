@@ -1,0 +1,28 @@
+USE TENSORFLOW ENVIRONMENT FOR EVERYTHING
+source ~/tensorflow_1.7/bin/activate
+
+PREPARE FOR TRAINING
+edit image_list.txt and labels.txt in the Maritime Dataset
+convert png to jpg : mogrify -format JPG ./*.png    
+
+CREATE MASK FOR EACH INSTANCE IN TRAINING FOLDER
+python loader.py
+Modify the JSON_parser.py if you create the .json files using something other than LabelMe
+
+CREATE A "VALIDATION" FOLDER AND ADD ONE IMAGE AT LEAST THERE
+
+VISUALIZE THE MASKS CREATED
+python showdata.py N (N=number of image in training folder. f.ex. 00025)
+
+GET MEAN VALUE OF ALL TRAINING IMAGES -> Modify maritime.py
+python mean_pixel.py (in the mrcnn folder)
+
+TRAIN
+python maritime.py --dataset="/home/adllo/others_git/Mask_RCNN/Train_own_dataset/maritime_dataset/" --model="coco"
+Weights are saved in 'logs' folder
+
+JUPYTER NOTEBOOK TESTING
+jupyter notebook -> maritime.ipynb
+
+TEST WITH WEBCAM
+python mask_rcnn_webcam.py
