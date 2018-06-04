@@ -1,0 +1,5 @@
+buoy
+land
+sea
+ship
+sky
