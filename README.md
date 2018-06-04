@@ -27,8 +27,11 @@ The repository includes:
 * Prepare your dataset: edit the *image_list.txt* and *labels.txt* files accordingly. Convert all *.jpg* files to *.png* if necessary.
 
 * [loader.py](Train_own_dataset/training_codes/loader.py) creates a mask for every instance of every class of every image in your training set. If the *.json* files have not been created by *LabelMe*, then the [JSON_parser.py](Train_own_dataset/training_codes/JSON_parser.py) file will most likely need to be modified.
+ ```bash
+   python loader.py
+   ```
 
-* Create a validation folder and add ome of the training images there (at least one).
+* Create a validation folder and add some of the training images there (at least one).
 
 * [showdata.py](mrcnn/showdata.py) to visualize the created instance masks. Usage:
    ```bash
