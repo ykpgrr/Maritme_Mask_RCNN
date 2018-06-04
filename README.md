@@ -47,11 +47,11 @@ The weights will be saved every epoch in the *logs* folder.
 
 ![Jupyter Notebook results](assets/f_pass.png)
 
-* [mask_rcnn_webcam.ipynb](Train_own_dataset/running_codes/mask_rcnn_webcam.py) to run the trained network on the video stream from an USB camera.
+* [mask_rcnn_webcam.py](Train_own_dataset/running_codes/mask_rcnn_webcam.py) to run the trained network on the video stream from an USB camera.
 
-* [mask_rcnn_node.ipynb](Train_own_dataset/running_codes/mask_rcnn_node.py) to run the trained network on the video stream from an Kinect using the ROS framework.
+* [mask_rcnn_node.py](Train_own_dataset/running_codes/mask_rcnn_node.py) to run the trained network on the video stream from an Kinect using the ROS framework.
 
-* [mask_rcnn_video.ipynb](Train_own_dataset/running_codes/mask_rcnn_video.py) to run the trained network on a specific video and save the results as a video too.
+* [mask_rcnn_video.py](Train_own_dataset/running_codes/mask_rcnn_video.py) to run the trained network on a specific video and save the results as a video too.
 
 ### [Video Demo](https://www.youtube.com/watch?v=_vmKbbW1FuM)
 [![Mask RCNN on DTU Maritime Dataset](assets/maritime_video.gif)](https://www.youtube.com/watch?v=_vmKbbW1FuM)
